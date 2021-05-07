@@ -1,23 +1,24 @@
-To begin, I'll go into detail of the four memory allocation algorithms that are being implemented.
-    # (1) First Fit:
+To begin, I'll go into detail of the four memory allocation algorithms that are being implemented:
+
+# (1) First Fit:
         Given a number of partitions in memory and a number of processes for which each are assigned 
         a certain amount of memory to be allocated for, First Fit places each process in the first partition of 
         memory for which the process will "fit" into. For each process, the total allotted memory will be iterated 
         through and assign each process an appropriate space.
-    # (2) Best Fit:
+# (2) Best Fit:
         Given a number of partitions in memory and a number of processes for which each are assigned 
         a certain amount of memory to be allocated for, Best Fit places each process in the smallest possible 
         partition of memory. In other words, Best Fit designates the partition in memory for which the difference 
         between the processes memory allocation and the partition's allocation is the smallest (so long as the
         partition is big enough to store it). For each process, the total allotted memory will be iterated through 
         and assign each process an appropriate space.
-    # (3) Worst Fit:
+# (3) Worst Fit:
         Given a number of partitions in memory and a number of processes for which each are assigned 
         a certain amount of memory to be allocated for, Worst Fit places each process in the partition that 
         posseses the greatest difference between the processes memory allocation and the partition's allocation.
         For each process, the total allotted memory will be iterated through and assign each process an 
         appropriate space.
-    # (4) Next Fit:
+# (4) Next Fit:
 	Similar to First Fit, but instead of beginning the search for partitioned memory at the beginning of 
 	memory, the search begins at the last point of allocated memory.
 
